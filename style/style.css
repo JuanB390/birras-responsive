@@ -239,5 +239,16 @@ list-style: none;
         left: 20px;
     }
 }
+@media screen and (max-width: 576px){
+  .nav-menu{
+      z-index: 1;
+  }
+
+  .content-portada{
+   width: 85%;
+   left: 200px;
+  }
+}
+
 
 
