@@ -65,6 +65,8 @@ body{
 display: flex;
 margin-right: 40px;
 list-style: none;
+position: absolute;
+z-index: 1;
 }
 .nav-menu-item{
     font-weight: 100;
@@ -98,6 +100,7 @@ list-style: none;
     padding: 0 20px;
     display: none;
 }
+
 .content-portada{
     width: 100%;
     height: 400px;
@@ -106,12 +109,14 @@ list-style: none;
     align-items: center;
     align-content: center;
     justify-content: space-around;
+    position: absolute;
     color: #fff;
     background-image: url("https://resizer.glanacion.com/resizer/gQCu1jD2o8Ri-liy1CJlQZ75Pxc=/1023x682/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/HYLQNZXHPJCVNIZJXA2VOYA2VE.jpg");
     background-color: rgb(100, 100, 100);
     background-blend-mode: soft-light;
     background-repeat: no-repeat;
     background-size: cover;
+    
 }
 .content-portada h1{
     font-size: 7.5em;
@@ -128,6 +133,9 @@ list-style: none;
     top: -105px;
     left: -25px;
 }
+.nav-menu-link:hover{
+    background-size: 100% 2px;
+    text-shadow: #fff 2px 2px 4px ;}
 
 @media  screen and (max-width:768px) {
     body{
@@ -153,7 +161,7 @@ list-style: none;
         font-weight: 100;
         position: relative;
         top: -10px;
-        left: -5px;
+        left: 5px;
     }
     
     .nav-menu{
@@ -163,10 +171,9 @@ list-style: none;
         background-color: black;
         position: fixed;
         width: 200px;
-        top: 81px;
+        top: 80px;
         align-items: center;
         padding: 0;
-
         height: calc(100% - 80px);
         overflow-y: auto;
         left: 100%;
@@ -219,6 +226,7 @@ list-style: none;
         align-content: center;
         justify-content: space-around;
         color: #fff;
+        position: absolute;
         background-image: url("https://resizer.glanacion.com/resizer/gQCu1jD2o8Ri-liy1CJlQZ75Pxc=/1023x682/filters:format(webp):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/lanacionar/HYLQNZXHPJCVNIZJXA2VOYA2VE.jpg");
         background-color: rgb(100, 100, 100);
         background-blend-mode: soft-light;
@@ -237,8 +245,10 @@ list-style: none;
         font-size: 1.05em;
         top: -40px;
         left: 20px;
+        z-index: 0;
     }
-}
+    }
+
 @media screen and (max-width: 576px){
   .nav-menu{
       z-index: 1;
@@ -246,9 +256,7 @@ list-style: none;
 
   .content-portada{
    width: 85%;
-   left: 200px;
+   left: 300px;
   }
 }
-
-
 
