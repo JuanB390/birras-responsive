@@ -51,6 +51,42 @@ body {
     animation: parpadeo 2s linear infinite;
     transition: .7s ease;
 }
+.content-portada {
+    width: 100%;
+    height:480px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    justify-content: space-around;
+    color: #fff;
+    background-image: url(/imagenes/portada10.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.content-portada img{
+    width: 100%;
+    height: 100%;
+}
+
+.content-portada h1 {
+    font-family: 'Lato';
+    font-size: 30000px;
+    line-height: 300px;
+    font-weight: 300;
+    margin-top: 100px;
+
+}
+
+.content-portada p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    font-weight: 300;
+    position: relative;
+    margin-top: -20px;
+    left: -25px;}
+
 
 @keyframes parpadeo {
 
@@ -295,10 +331,20 @@ body {
         font-size: 70px;
         top: 10px;
     }
-
+.nav-menu{
+}
     .content-portada p {
         font-size: 14px;
         left: 0;
         margin-top: 100px;
     }
+}
+
+@media screen and (min-width: 360px){
+    .content-portada h1{
+        top: 10px;
+    }
+    .content-portada p{
+        margin-top: 110px;
+    }    
 }
