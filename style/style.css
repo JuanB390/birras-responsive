@@ -8,6 +8,7 @@
 body {
     font-family: 'Lato', sans-serif;
     color: #fff;
+    background-color: black;
 }
 
 .header {
@@ -310,6 +311,7 @@ body {
 
     .nav-menu {
         width: 100vw;
+        position: fixed;
 
     }
 
@@ -324,6 +326,63 @@ body {
         top: -150px;
         left: -20px;
     }
+    .content-cards{
+       display: flex;
+       flex-wrap:wrap;
+       position: absolute;
+       justify-content: space-evenly; 
+       gap: 40px;
+       width: 100%;
+       height: auto;
+       margin-top: 50px;
+      
+    }
+    #card1,#card2,#card3,#card4,#card5,#card6{
+        width: 150px;
+        height: 250px;
+        border: solid #fff 2px;
+        border-radius:10px ;
+        background-color: black;
+    }
+    #card1 img{
+        width: 100%;
+        height: 78%;
+        border-bottom: solid black 1.8px;
+        opacity: 0.7;
+    }
+    #card1 h3{
+        font-family: 'Lato';
+        font-size: 16px;
+        font-weight: 700;
+        color: #fff;
+        margin-left:10px ;
+    }
+    .monto{
+        color: rgb(53, 182, 53);
+        
+    }
+    #card1 i{
+        margin-left: 60px;
+        font-size: 1.2em;
+        margin-top: 4px;
+        color: #0f9e92;
+    }
+    h2{ 
+        margin: 15px 18px;
+        font-size: 1.8em;
+        font-family: 'Lato', sans-serif;
+        font-weight: 500;
+    }
+
+    hr{
+        position: relative;
+        margin:auto;
+        width: 100%;
+        top:-3px;
+        border-color: #0f9e92;
+        height: 4px;
+    }
+
 }
 
 @media screen and (max-width : 360px) {
